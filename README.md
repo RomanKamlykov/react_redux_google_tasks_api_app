@@ -34,8 +34,8 @@
 <p>
   <h3>Application structure:</h3>
   <pre>
-  <MyComponent> - Presentational Component
-  (MyComponent) - connected to Redux by Container Component
+    < MyComponent > - Presentational Component
+    ( MyComponent ) - connected to Redux by Container Component
 
     (App)
     │
