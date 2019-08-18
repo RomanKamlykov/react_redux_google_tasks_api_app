@@ -1,68 +1,90 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h2>React Redux + Google API</h2>
+<p>
+  Based on these examples:
+  <ul>
+    <li>
+      <a href="https://github.com/krambertech/react-essential-course/tree/master/06-real-world" target="_blank">krambertech/react-essential-course</a>
+    </li>
+    <li>
+      <a href="https://github.com/KarafiziArtur/react-google-tasks" target="_blank">KarafiziArtur/react-google-tasks</a>
+    </li>
+  </ul>
+</p>
+<p>
+  To get started, add your CLIENT_ID to the file 'src/api/index.js'. <br />
+  You can create your CLIENT_ID using the instructions on this <a href="https://developers.google.com/tasks/quickstart/js">page</a>.
+</p>
+<p>
+  <h3>The application uses the following tools:</h3>
+  <ul>
+    <li>
+      React, React Hooks, React-Router, Create React App
+    </li>
+    <li>
+      Redux, React-Redux, Redux-Thunk
+    </li>
+    <li>
+      Material-UI
+    </li>
+    <li>
+      Google Tasks API
+    </li>
+  </ul>
+</p>
+<p>
+  <h3>Application structure:</h3>
+  <pre>
+  <MyComponent> - Presentational Component
+  (MyComponent) - connected to Redux by Container Component
 
-## Available Scripts
+    (App)
+    │
+    ├── (LogInButton)
+    │
+    ├── <HomeButton>
+    │
+    ├── (TaskLists)
+    │   │
+    │   └── <DialogTaskListCreate>
+    │
+    └── (Tasks)
+        │
+        ├── <DialogTaskCreate>
+        │
+        ├── <DialogTaskListEditTitle>
+        │
+        └── map (Task)
+            │
+            └── <DialogTaskEdit>
+  </pre>
+</p>
+<p>
+  <h3>Application actions:</h3>
 
-In the project directory, you can run:
+  LogInButton component:
+  <ul>
+    <li>sessionAuthorize</li>
+    <li>sessionLogout</li>
+  </ul>
 
-### `npm start`
+  TaskLists component:
+  <ul>
+    <li>taskListsLoad</li>
+    <li>taskListCreate</li>
+  </ul>
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  Tasks component:
+  <ul>
+    <li>taskListTitleUpdate</li>
+    <li>taskListDelete</li>
+    <li>tasksLoad</li>
+    <li>taskCreate</li>
+  </ul>
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+  Task component:
+  <ul>
+    <li>taskUpdateStatus</li>
+    <li>taskUpdate</li>
+    <li>taskDelete</li>
+  </ul>
+</p>
