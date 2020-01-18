@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react_redux_google_tasks_api_app/static/css/main.6c021e9a.chunk.css",
+    "main.js": "/react_redux_google_tasks_api_app/static/js/main.0c4e6117.chunk.js",
+    "main.js.map": "/react_redux_google_tasks_api_app/static/js/main.0c4e6117.chunk.js.map",
+    "runtime~main.js": "/react_redux_google_tasks_api_app/static/js/runtime~main.2c7807e9.js",
+    "runtime~main.js.map": "/react_redux_google_tasks_api_app/static/js/runtime~main.2c7807e9.js.map",
+    "static/js/2.b8959414.chunk.js": "/react_redux_google_tasks_api_app/static/js/2.b8959414.chunk.js",
+    "static/js/2.b8959414.chunk.js.map": "/react_redux_google_tasks_api_app/static/js/2.b8959414.chunk.js.map",
+    "index.html": "/react_redux_google_tasks_api_app/index.html",
+    "precache-manifest.1fe6af68bfdd01fab2f9823bfa0f675a.js": "/react_redux_google_tasks_api_app/precache-manifest.1fe6af68bfdd01fab2f9823bfa0f675a.js",
+    "service-worker.js": "/react_redux_google_tasks_api_app/service-worker.js",
+    "static/css/main.6c021e9a.chunk.css.map": "/react_redux_google_tasks_api_app/static/css/main.6c021e9a.chunk.css.map"
+  }
+}
