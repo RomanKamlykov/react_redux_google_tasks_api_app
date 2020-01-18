@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react_redux_google_tasks_api_app/static/css/main.03849b67.chunk.css",
-    "main.js": "/react_redux_google_tasks_api_app/static/js/main.90689a12.chunk.js",
-    "main.js.map": "/react_redux_google_tasks_api_app/static/js/main.90689a12.chunk.js.map",
+    "main.css": "/react_redux_google_tasks_api_app/static/css/main.6c021e9a.chunk.css",
+    "main.js": "/react_redux_google_tasks_api_app/static/js/main.af3c3d07.chunk.js",
+    "main.js.map": "/react_redux_google_tasks_api_app/static/js/main.af3c3d07.chunk.js.map",
     "runtime~main.js": "/react_redux_google_tasks_api_app/static/js/runtime~main.2c7807e9.js",
     "runtime~main.js.map": "/react_redux_google_tasks_api_app/static/js/runtime~main.2c7807e9.js.map",
-    "static/js/2.2b063f68.chunk.js": "/react_redux_google_tasks_api_app/static/js/2.2b063f68.chunk.js",
-    "static/js/2.2b063f68.chunk.js.map": "/react_redux_google_tasks_api_app/static/js/2.2b063f68.chunk.js.map",
+    "static/js/2.b8959414.chunk.js": "/react_redux_google_tasks_api_app/static/js/2.b8959414.chunk.js",
+    "static/js/2.b8959414.chunk.js.map": "/react_redux_google_tasks_api_app/static/js/2.b8959414.chunk.js.map",
     "index.html": "/react_redux_google_tasks_api_app/index.html",
-    "precache-manifest.b1daaa2270959d78eca65d2490655e6b.js": "/react_redux_google_tasks_api_app/precache-manifest.b1daaa2270959d78eca65d2490655e6b.js",
+    "precache-manifest.dac7c26f8f3515e5e9fa0989e0c5f117.js": "/react_redux_google_tasks_api_app/precache-manifest.dac7c26f8f3515e5e9fa0989e0c5f117.js",
     "service-worker.js": "/react_redux_google_tasks_api_app/service-worker.js",
-    "static/css/main.03849b67.chunk.css.map": "/react_redux_google_tasks_api_app/static/css/main.03849b67.chunk.css.map"
+    "static/css/main.6c021e9a.chunk.css.map": "/react_redux_google_tasks_api_app/static/css/main.6c021e9a.chunk.css.map"
   }
 }
