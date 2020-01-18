@@ -54,7 +54,7 @@ export default function TaskLists({ taskLists, taskListsLoad, taskListCreate }) 
       {/* ------------- Task lists --------------- */}
       {taskLists.length > 0 &&
         taskLists.map(list =>
-          <ListItem button component="a" href={`/#list/${list.id}`} key={list.id}>
+          <ListItem button component="a" href={`#list/${list.id}`} key={list.id}>
             <ListItemIcon>
               <FolderIcon />
             </ListItemIcon>

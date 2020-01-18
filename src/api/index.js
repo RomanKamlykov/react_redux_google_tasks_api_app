@@ -1,4 +1,4 @@
-const CLIENT_ID = 'process.env.REACT_APP_CLIENT_ID'
+const CLIENT_ID = '749877661272-8aur6q21ptv9tf4t13go5sh2l6111a6m.apps.googleusercontent.com'
 
 const SCOPES = [
   'https://www.googleapis.com/auth/tasks',

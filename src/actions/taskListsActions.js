@@ -81,7 +81,6 @@ export function taskListsLoad() {
 }
 
 export function taskListCreate(title) {
-  console.log(title);
   return dispatch => {
     api.taskListCreate({ title })
       .then(items => dispatch(taskListCreate_success(items)))

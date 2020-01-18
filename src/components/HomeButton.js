@@ -8,7 +8,7 @@ import HomeIcon from '@material-ui/icons/Home'
 
 export default function HomeButton() {
   return (
-    <ListItem button component="a" href={`/#home`}>
+    <ListItem button component="a" href={`#home`}>
       <ListItemIcon>
         <HomeIcon />
       </ListItemIcon>

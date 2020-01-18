@@ -24,7 +24,6 @@ export default function taskListsReducer(state = [], action) {
       newState = [...state]
       let deletedTaskListIndex = newState.findIndex(taskList => taskList.id === action.items.taskListId)
       newState.splice(deletedTaskListIndex, 1)
-      console.log(newState);
       return newState
 
 		default:
