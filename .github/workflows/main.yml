@@ -1,6 +1,9 @@
 name: CI
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   build:
@@ -8,14 +11,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
-    - name: Run a one-line script
-      run: echo Hello, world!
-    - name: Run a multi-line script
+
+    - name: Checkout
+      uses: actions/checkout@v1
+
+    - name: Build
       run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
-    - with:
-        REACT_APP_CLIENT_ID: ${{ secrets.REACT_APP_CLIENT_ID }}
+        npm install
+        npm run-script build
+
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        REACT_APP_APIKey: ${{ secrets.REACT_APP_APIKey }}
+        REACT_APP_APISecret: ${{ secrets.REACT_APP_APISecret }}
         BRANCH: gh-pages
-        FOLDER: static
+        FOLDER: build
