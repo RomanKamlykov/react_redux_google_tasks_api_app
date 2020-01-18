@@ -28,7 +28,7 @@ export default function DialogTaskEdit({ isOpen, onSubmit, onClose, task, taskLi
     setNewTitle(e.target.value)
   }
   function handleNotesChange(e) {
-    setNewNotes(e.target.value)
+    setNewNotes(e.target.value);
   }
   function handleDueChange(date) {
     setNewDue(date)
@@ -49,7 +49,7 @@ export default function DialogTaskEdit({ isOpen, onSubmit, onClose, task, taskLi
         taskListId: taskListId,
         taskId: id,
         title: newTitle,
-        notes: newNotes || undefined,
+        notes: newNotes,
         due: newDue || undefined
       })
     }
@@ -83,6 +83,7 @@ export default function DialogTaskEdit({ isOpen, onSubmit, onClose, task, taskLi
           onChange={handleNotesChange}
         />
       </DialogContent>
+
       <DialogContent>
         <MuiPickersUtilsProvider utils={DateFnsUtils}>
           <KeyboardDatePicker

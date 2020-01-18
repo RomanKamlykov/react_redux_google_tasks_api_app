@@ -7,11 +7,14 @@ import DialogContent from '@material-ui/core/DialogContent'
 import TextField from '@material-ui/core/TextField'
 import DialogActions from '@material-ui/core/DialogActions'
 import Button from '@material-ui/core/Button'
+import DateFnsUtils from '@date-io/date-fns'
+import { MuiPickersUtilsProvider, KeyboardDatePicker } from '@material-ui/pickers'
 
 export default function DialogTaskCreate({ isOpen, onSubmit, onClose }) {
-  const [newTitle, setNewTitle] = useState('')
-  const [newNotes, setNewNotes] = useState('')
-  const [newDue, setNewDue] = useState('')
+
+  const [newTitle, setNewTitle] = useState()
+  const [newNotes, setNewNotes] = useState()
+  const [newDue, setNewDue] = useState()
 
   // обработчик элементов input
   function handleTitleChange(e) {
@@ -20,7 +23,7 @@ export default function DialogTaskCreate({ isOpen, onSubmit, onClose }) {
   function handleNotesChange(e) {
     setNewNotes(e.target.value)
   }
-  function handleDueChange(e, date) {
+  function handleDueChange(date) {
     setNewDue(date)
   }
 
@@ -71,13 +74,26 @@ export default function DialogTaskCreate({ isOpen, onSubmit, onClose }) {
         />
       </DialogContent>
 
-      <DialogContent>
+      {/* <DialogContent>
         <TextField
           type="date"
           label="Enter task due"
           InputLabelProps={{ shrink: true }}
           onChange={handleDueChange}
         />
+      </DialogContent> */}
+      
+      <DialogContent>
+        <MuiPickersUtilsProvider utils={DateFnsUtils}>
+          <KeyboardDatePicker
+            disableToolbar
+            format="dd/MM/yyyy"
+            label="Enter task due"
+            value={newDue || null} // это для возможности установки пустого значения
+            InputLabelProps={{ shrink: true }}
+            onChange={handleDueChange}
+          />
+        </MuiPickersUtilsProvider>
       </DialogContent>
 
       <DialogActions>
