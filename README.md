@@ -1,5 +1,8 @@
 <h2>React Redux + Google API</h2>
 <p>
+  Ссылка для просмотра приложения <a href='https://romankamlykov.github.io/react_redux_google_tasks_api_app/' target='_blank'>GitHub Pages</a>
+</p>
+<p>
   Based on these examples:
   <ul>
     <li>
