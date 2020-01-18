@@ -18,4 +18,4 @@ jobs:
     - with:
         REACT_APP_CLIENT_ID: ${{ secrets.REACT_APP_CLIENT_ID }}
         BRANCH: gh-pages
-        FOLDER: dist
+        FOLDER: static
