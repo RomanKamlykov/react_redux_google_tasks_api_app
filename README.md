@@ -6,7 +6,7 @@ Based on these examples:
 - [krambertech/react-essential-course](https://github.com/krambertech/react-essential-course/tree/master/06-real-world)
 - [KarafiziArtur/react-google-tasks](https://github.com/KarafiziArtur/react-google-tasks)
 
-To get started, add your CLIENT_ID to the file 'src/api/index.js'. 
+To get started, add your CLIENT_ID to the file 'src/api/index.js'.  
 You can create your CLIENT_ID using the instructions on this [page](https://developers.google.com/tasks/quickstart/js).
 
 ## The application uses the following tools:</h3>
