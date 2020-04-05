@@ -21,24 +21,15 @@ You can create your CLIENT_ID using the instructions on this [page](https://deve
 ( MyComponent ) - Container Component connected to Redux
 
 (App)
-│
-├── (LogInButton)
-│
-├── <HomeButton>
-│
-├── (TaskLists)
-│   │
-│   └── <DialogTaskListCreate>
-│
-└── (Tasks)
-    │
-    ├── <DialogTaskCreate>
-    │
-    ├── <DialogTaskListEditTitle>
-    │
-    └── map (Task)
-    │
-    └── <DialogTaskEdit>
+├─ (LogInButton)
+├─ <HomeButton>
+├─ (TaskLists)
+│  └─ <DialogTaskListCreate>
+└─ (Tasks)
+   ├─ <DialogTaskCreate>
+   ├─ <DialogTaskListEditTitle>
+   └─ map (Task)
+      └─ <DialogTaskEdit>
 ```
 ## Application actions:
 LogInButton component:
